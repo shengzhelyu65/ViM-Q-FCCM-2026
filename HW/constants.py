@@ -1,0 +1,39 @@
+from copy import deepcopy
+import os
+
+# Current directory
+ROOT_DIR = os.getcwd()
+
+# SpinalHDL directory
+SPINAL_DIR = os.path.join(ROOT_DIR, "SPINAL")
+
+# Vision Mamba model parameters (from model.hpp)
+NUM_LAYERS = 24
+D_MODEL = 192
+D_INNER = 384  # 2 * D_MODEL
+D_STATE = 16
+DT_RANK = 16
+SCAN_DIM = 6144  # D_INNER * D_STATE
+NUM_PATCHES = 197  # (224/16) * (224/16) + 1
+INPUT_CHANNELS = 3
+INPUT_WIDTH = 224
+INPUT_HEIGHT = 224
+PATCH_WIDTH = 16
+PATCH_HEIGHT = 16
+PADDED_NUM_CLASSES = 1008
+
+# Hardware parameters (from hardware.hpp)
+AXI_XFER_BIT_WIDTH = 256
+FEATURE_BLOCK_SIZE = 8
+LINEAR_BLOCK_SIZE = 16
+CONV_BLOCK_SIZE = 16
+CONV_KERNEL_SIZE = 4
+
+# Depth settings for FIFOs
+URAM_DEPTH = 4096
+URAM2_DEPTH = URAM_DEPTH * 2
+URAM4_DEPTH = URAM_DEPTH * 4
+DEEP_DEPTH = 512
+MEDIUM_DEPTH = 64
+SHALLOW_DEPTH = 2
+

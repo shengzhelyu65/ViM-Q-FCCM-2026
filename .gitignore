@@ -1,0 +1,16 @@
+.DS_Store
+.vscode
+.cursor
+.idea
+
+# Python
+**/__pycache__/
+*.pyc
+
+# Common logs and temp files
+*.log
+*.jou
+*.tmp
+
+# OS/editor artifacts
+Thumbs.db

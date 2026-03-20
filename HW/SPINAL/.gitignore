@@ -1,0 +1,9 @@
+verilator
+tmp
+target
+simWorkspace
+project
+verilog
+vivado
+*.v
+*.csv
