@@ -12,7 +12,6 @@ ip_repo/
 .cursor/
 .idea/
 .bsp/
-*.zip
 *.log
 *.pyc
 *.jou
